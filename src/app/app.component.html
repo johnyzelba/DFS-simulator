@@ -1,0 +1,6 @@
+<app-header (graphPropertiesChanged)="onGraphPropertiesChanged($event)" (clearGraph)="onClear()" (simulateGraph)="onSimulate()"></app-header>
+<canvas #canvas (window:resize)="onResize($event)" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)" (mousemove)="onMouseMove($event)">
+</canvas>
+
+
+<router-outlet></router-outlet>
